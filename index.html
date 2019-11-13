@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>New York Times Search</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+        <!--Jumbotron-->
+        <div class="jumbotron">
+        <h1>New York Times Search</h1>
+    </div>
+    <div class="row">
+        <!-- Search Parameters Panel -->
+        <div class="col">
+                <div class="card">
+                        <div class="card-header">
+                          Search Parameters
+                        </div>
+                        <div class="card-body">
+                          <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Search Term:</label>
+                                  <input type="text" class="form-control" id="search" aria-describedby="emailHelp" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                                        <select class="form-control" id="numRecords">
+                                          <option value=1>1</option>
+                                          <option value=5 selected>5</option>
+                                          <option value=10>10</option>
+                                        </select>
+                                      </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Start Year:</label>
+                                  <input type="text" class="form-control" id="startYear" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">End Year:</label>
+                                  <input type="text" class="form-control" id="endYear" placeholder="">
+                                </div>
+                                <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+                                <button type="button" class="btn btn-primary">Clear</button>
+                              </form>
+                        </div>
+                      </div>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <!-- Results Panel -->
+            <div class="col">
+                    <div class="card">
+                            <div class="card-header">
+                              Search Results
+                            </div>
+                            <div class="card-body" id="wellSection">
+                              
+                            </div>
+                          </div>
+            </div>
+        </div>
+</div>
+<!--jQuery JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    <!--Script.js-->
+    <script src="script.js"></script>
+  </body>
+</html>
